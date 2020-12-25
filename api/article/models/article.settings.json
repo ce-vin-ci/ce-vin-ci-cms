@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Contenu": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre"
+    }
+  }
+}

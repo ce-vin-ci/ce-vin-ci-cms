@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "niveaus",
+  "info": {
+    "name": "Niveau"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "niveau": {
+      "type": "string"
+    },
+    "questions": {
+      "via": "niveau",
+      "collection": "question-a-choix-multiples"
+    }
+  }
+}

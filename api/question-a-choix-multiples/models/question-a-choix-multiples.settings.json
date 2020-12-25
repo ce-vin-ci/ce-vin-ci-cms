@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_a_choix_multiples",
+  "info": {
+    "name": "Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Question": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Reponse1": {
+      "type": "string",
+      "required": true
+    },
+    "Reponse2": {
+      "type": "string",
+      "required": true
+    },
+    "Reponse3": {
+      "type": "string",
+      "required": true
+    },
+    "Reponse4": {
+      "type": "string",
+      "required": true
+    },
+    "niveau": {
+      "model": "niveau",
+      "via": "questions"
+    }
+  }
+}

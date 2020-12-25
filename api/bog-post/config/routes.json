@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/articles",
-      "handler": "article.find",
+      "path": "/bog-posts",
+      "handler": "bog-post.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/articles/count",
-      "handler": "article.count",
+      "path": "/bog-posts/count",
+      "handler": "bog-post.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/articles/:id",
-      "handler": "article.findOne",
+      "path": "/bog-posts/:id",
+      "handler": "bog-post.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/articles",
-      "handler": "article.create",
+      "path": "/bog-posts",
+      "handler": "bog-post.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/articles/:id",
-      "handler": "article.update",
+      "path": "/bog-posts/:id",
+      "handler": "bog-post.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/articles/:id",
-      "handler": "article.delete",
+      "path": "/bog-posts/:id",
+      "handler": "bog-post.delete",
       "config": {
         "policies": []
       }

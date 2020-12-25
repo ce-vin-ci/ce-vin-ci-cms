@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "levels",
   "info": {
-    "name": "Article"
+    "name": "Level"
   },
   "options": {
     "increments": true,
@@ -10,19 +10,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Titre": {
+    "value": {
       "type": "string",
       "required": true
     },
-    "Date": {
-      "type": "date"
-    },
-    "Contenu": {
-      "type": "richtext"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "Titre"
+    "questions": {
+      "via": "level",
+      "collection": "question"
     }
   }
 }

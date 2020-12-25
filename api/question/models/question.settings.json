@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "question_a_choix_multiples",
+  "collectionName": "questions",
   "info": {
     "name": "Question",
     "description": ""
@@ -13,27 +13,26 @@
   "attributes": {
     "Question": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
-    "Reponse1": {
+    "Answer_1": {
       "type": "string",
       "required": true
     },
-    "Reponse2": {
+    "Answer_2": {
       "type": "string",
       "required": true
     },
-    "Reponse3": {
+    "Answer_3": {
       "type": "string",
       "required": true
     },
-    "Reponse4": {
+    "Answer_4": {
       "type": "string",
       "required": true
     },
-    "niveau": {
-      "model": "niveau",
+    "level": {
+      "model": "level",
       "via": "questions"
     }
   }

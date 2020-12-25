@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bog_posts",
+  "info": {
+    "name": "Bog Post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Header": {
+      "type": "string",
+      "required": true
+    },
+    "Publish_Date": {
+      "type": "date"
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

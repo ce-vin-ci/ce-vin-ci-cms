@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "name": "Answer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "answer": {
+      "type": "string",
+      "required": true
+    },
+    "question": {
+      "model": "question",
+      "via": "answers"
+    },
+    "Correct": {
+      "type": "enumeration",
+      "enum": [
+        "False",
+        "True"
+      ],
+      "required": true
+    }
+  }
+}

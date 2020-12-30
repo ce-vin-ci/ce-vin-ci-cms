@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "questions",
   "info": {
-    "name": "Question",
-    "description": ""
+    "name": "Question"
   },
   "options": {
     "increments": true,
@@ -11,29 +10,17 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Question": {
-      "type": "string",
-      "required": true
-    },
-    "Answer_1": {
-      "type": "string",
-      "required": true
-    },
-    "Answer_2": {
-      "type": "string",
-      "required": true
-    },
-    "Answer_3": {
-      "type": "string",
-      "required": true
-    },
-    "Answer_4": {
+    "title": {
       "type": "string",
       "required": true
     },
     "level": {
       "model": "level",
       "via": "questions"
+    },
+    "answers": {
+      "via": "question",
+      "collection": "answer"
     }
   }
 }

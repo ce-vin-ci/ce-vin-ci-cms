@@ -8,6 +8,12 @@ A quick description of your strapi application
 npx strapi develop
 '''
 
+## troubleshooting mongo
+
+mongo "mongodb+srv://cluster0.zfnnq.mongodb.net/ce-vin-ci-db" --username strapi-user
+
+db.answers.updateMany( {}, { $rename: { "Correct": "isCorrect" } } )
+
 ### Why can't I create or update content-types in production/staging?
 
 Strapi stores model configuration files (what defines the model schema) in files such as `api/restaurant/models/restaurant.settings.json`. Due to how Node.js works, in order for changes to take effect, that would require Node to restart the server. This could potentionally cause downtime of your production service and likewise these changes should be tracked in some kind of source control.

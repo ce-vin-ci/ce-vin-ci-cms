@@ -19,7 +19,7 @@
       "model": "question",
       "via": "answers"
     },
-    "Correct": {
+    "isCorrect": {
       "type": "enumeration",
       "enum": [
         "False",
